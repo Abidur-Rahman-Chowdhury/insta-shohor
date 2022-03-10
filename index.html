@@ -77,6 +77,17 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
+
+        <!-- Bonus mark question answer section -->
+        <section>
+            <h1 class="text-center mt-4 display-1 fw-bold">Q & A</h1>
+            <div class="container">
+                <h3>What does Javascript event loop do?</h3>
+                <p><span class="fw-bold">Answer:</span> জাভাস্ক্রিপট যখন রান টাইমে কাজ করে তখন সে ২ ভাবে কাজ করে থাকে। ১। সিনক্রোনাস , ২। এসিনক্রোনাস । জাভাস্ক্রিপট সিনক্রোনাসলি লাইন বাই লাইন কোড এক্সিকিউট করে সেই এক্সিকিউশন গুলো রাখে call stack এর মধ্যে এবং এসিনক্রোনাস কোন কাজ বা ইভেন্ট পেলে তা পাঠিয়ে দেওয়া হয় queue stack এ । এছাড়াও রয়েছে  heap যেখানে মেমোরি এর রেফারেন্স রাখা হয় এবং এক্সিকিউশন শেষ এ অপ্রয়োজনীয় মেমোরিকে  garbage collection হিসেবে পাঠিয়ে দেওয়া হয়। এইভাবে কল স্টেক এর কাজ শেষ হলে জাভাস্ক্রিপ্ট এসিনক্রোনাস কাজ গুলো যা queue stack এ রাখা হয়েছিলো তা একের পর এক সম্পন্ন করে। আর এই সম্পূর্ন প্রসেসটাকেই বলা হয় জাভাস্ক্রিপ্ট ইভেন্ট লুপ। </p>
+            </div>
+            
+
+        </section>
         <footer></footer>
 
         <!-- add javascript  file  -->
