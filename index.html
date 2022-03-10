@@ -81,11 +81,46 @@
         <!-- Bonus mark question answer section -->
         <section>
             <h1 class="text-center mt-4 display-1 fw-bold">Q & A</h1>
-            <div class="container">
+            <div class="container mb-4">
                 <h3>What does Javascript event loop do?</h3>
                 <p><span class="fw-bold">Answer:</span> জাভাস্ক্রিপট যখন রান টাইমে কাজ করে তখন সে ২ ভাবে কাজ করে থাকে। ১। সিনক্রোনাস , ২। এসিনক্রোনাস । জাভাস্ক্রিপট সিনক্রোনাসলি লাইন বাই লাইন কোড এক্সিকিউট করে সেই এক্সিকিউশন গুলো রাখে call stack এর মধ্যে এবং এসিনক্রোনাস কোন কাজ বা ইভেন্ট পেলে তা পাঠিয়ে দেওয়া হয় queue stack এ । এছাড়াও রয়েছে  heap যেখানে মেমোরি এর রেফারেন্স রাখা হয় এবং এক্সিকিউশন শেষ এ অপ্রয়োজনীয় মেমোরিকে  garbage collection হিসেবে পাঠিয়ে দেওয়া হয়। এইভাবে কল স্টেক এর কাজ শেষ হলে জাভাস্ক্রিপ্ট এসিনক্রোনাস কাজ গুলো যা queue stack এ রাখা হয়েছিলো তা একের পর এক সম্পন্ন করে। আর এই সম্পূর্ন প্রসেসটাকেই বলা হয় জাভাস্ক্রিপ্ট ইভেন্ট লুপ। </p>
             </div>
             
+            <div class="container">
+                <h3>Difference between Local Storage Vs Session Storage?</h3>
+
+                <table class="w-100 mb-5 mt-4 table-style" style="border: 1px solid black; border-collapse: collapse;">
+                   <thead style="border: 1px solid black !important;">
+                    <tr class="w-100 " >
+                        <th class="w-50 text-center" style="border: 1px solid black !important;">Local Storage</th>
+                        <th class="w-50 text-center">Session Storage</th>
+                    </tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                           <td class="text-center" style="border: 1px solid black !important;">ব্রাউজার ক্লোজ করার পর ও ডাটা সেইভ থাকে ।</td>
+                           <td class="text-center" style="border: 1px solid black !important;" >ব্রাউজার ক্লোজ করলে ডাটা সেইভ থাকে না। শুধুমাত্র সেশন চলাকালিন ডাটা সেইভ থাকে। </td>
+                       </tr>
+                       <tr>
+                           <td class="text-center" style="border: 1px solid black !important;">ডাটা সংরক্ষন করা হয় key value pair হিসেবে।</td>
+                           <td class="text-center" style="border: 1px solid black !important;">ডাটা সংরক্ষন করা হয় key value pair হিসেবে।</td>
+                       </tr>
+                       <tr>
+                           <td class="text-center" style="border: 1px solid black !important;">ডাটা পড়া, পরিবর্তন, সংযোজন, এবং বিয়োজন করা সম্ভব।</td>
+                           <td class="text-center" style="border: 1px solid black !important;">ডাটা পড়া, পরিবর্তন, সংযোজন, এবং বিয়োজন করা সম্ভব।</td>
+                       </tr>
+                       <tr>
+                           <td class="text-center" style="border: 1px solid black !important;">ডাটা পড়া, পরিবর্তন, সংযোজন, এবং বিয়োজন করা সম্ভব।</td>
+                           <td class="text-center" style="border: 1px solid black !important;">ডাটা পড়া, পরিবর্তন, সংযোজন, এবং বিয়োজন করা সম্ভব।</td>
+                       </tr>
+                       <tr>
+                           <td class="text-center" style="border: 1px solid black !important;">ডাটা সংরক্ষণ এর ধারণ ক্ষমতা সর্বোচ্চ ৫ মেগাবাইট।</td>
+                           <td class="text-center" style="border: 1px solid black !important;">ডাটা সংরক্ষণ এর ধারণ ক্ষমতা সর্বোচ্চ ৫ মেগাবাইট।</td>
+                       </tr>
+                   </tbody>
+                </table>
+            </div>
+
 
         </section>
         <footer></footer>

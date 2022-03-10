@@ -244,6 +244,11 @@ img {
 #reported{
   display: none;
 }
+/* style for bonus q & a part */
+.table-style tbody tr td {
+  padding: 10px 5px;
+
+}
 
 @media only screen and (max-width: 992px) {
   #posts {
