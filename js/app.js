@@ -150,7 +150,9 @@ const showPosts = (posts) => {
 };
 
 const displayLikedPosts = () => {
-    const likedPosts = getLikedPosts();
+  const likedPosts = getLikedPosts();
+  // fixed bug number 6 liked post getting double issue
+  document.getElementById("liked").textContent = '';
     likedPosts.forEach((post) => {
         const div = createPost(post);
         document.getElementById( "liked" ).appendChild(div);
@@ -158,8 +160,10 @@ const displayLikedPosts = () => {
 };
 
 const displayReportedPosts = () => {
-    const reportedPosts = getReportedPosts();
-    posts.forEach((post) => {
+  const reportedPosts = getReportedPosts();
+  // bug fixed number 5 about report when hidden button clicked all post shows like home page.. now the bug is fixed only reported post are shown
+  document.getElementById("reported").textContent = '';
+    reportedPosts.forEach((post) => {
         const div = createPost(post);
         document.getElementById( "reported" ).appendChild(div);
     });
